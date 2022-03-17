@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--bootstrap quick start'da yazan meta ile değiştirildi--->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--css dosyaları bağlantısı, css ve js dosyaları bootstrap dosyası indirilerek içerisinden alındı--->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!--css dosyaları bağlantısı, fontawesome dosyası web den indirildi--->
+    <link rel="stylesheet" href="css/medium.css"> <!--sonradan bu css dosyası oluşturuldu-->
+    
+    <!---*****font family için google font sitesinden alındı*****-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!---*****font family için google font sitesinden alındı*****-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!---*****font family için google font sitesinden alındı*****-->
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    
+    <title>Medium</title>
+</head>
+
+<body>
+    <!---Medium container start-->
+    <div class="bg-yellow border-bottom-dark py-1 fixed-top"> <!---bg ve border-bottom: solid--->
+    <!---fixed-top ile üst bölme sabitlendi ancak bu sefer de Explore container medium container'in altına yukarı kaydı--->
+    <!---Explore container'in yukarı kayma sorunu, Explore cotainer'e mt-5 verilerek çözüldü. mt-5 yetrli olmasaydı style tagı ile margin px verilebilirdi-->
+        <div class="container"> <!---container içerisine alındı (Medium yazan container)-->
+            <nav class="navbar navbar-expand-lg navbar-light"> <!---bootstrap navbar örneklerinden alındı-->
+                <a class="navbar-brand" href="#">
+                    <!--fontawesome web sitesinden aratılarak indirildi--->
+                    <i class="fa-brands fa-medium"></i>
+                    <strong>
+                        Medium
+                    </strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto"> <!--*********ml-auto ile liste öğeleri sağa yaslandı*******-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Write</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign In</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link btn btn-dark text-light" href="#">Get Started</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!---Medium container end-->
+
+    <!---Explore container'in yukarı kayma sorunu, Explore cotainer'e mt-5 verilerek çözüldü. mt-5 yetrli olmasaydı style tagı ile margin px verilebilirdi-->
+    <!---Explore container start-->
+    <div class="bg-yellow py-5 border-bottom-dark mt-5">
+        <div class="container"> <!---container içerisine alındı (Explore yazan container)-->
+
+            <!--row sayesinde row içinde kalan yapıların, bir satır içerisinde (sığana kadar alt satıra geçmeden) yerleşmesi sağlanır.
+                row yapısı oluşturulmasa idi, yapılar bir satır içinde yan yana değil, alt alta yerleşiyor olurdu.
+                row içinde bir yapıya col-12 uygulanırsa, elbette ki bir sonraki yapı alt satıra geçecektir. 
+                Dolayısıyla col-12 container dışına çıkmadan alt satırda yapı oluşturmak için kullanılabilir-->
+            <div class="row"> 
+                <div class="col-6">
+
+                    <!--display-4 ile yazı büyüklüğü artırıldı-->
+                    <h1 class="display-4">Explore new <br> perspectives</h1>
+
+                    <!--lead ile yazı görünürlüğü artırıldı-->
+                    <p class="lead">Read and share ideas from independent voices, world-class publications, and expert from around the globe. Everyone's welcome.
+                    <a href="#" class="text-dark"> <u>Learn more.</u> </a>
+                    </p>
+
+                    <!--buton özellikleri-->
+                    <a href="#" class="btn btn-outline-dark">Get Started</a>
+                </div>
+                <div class="col-6">
+
+                    <!--görsel circle içine alındı, ******float-right***** ile sağa yaslandı-->
+                    <!---sağa yaslamak için class içinde ml-auto ile birlikte d-block kullanarak da sağa yaslanabilir-->
+                    <img src="https://picsum.photos/300/300" alt="" class="rounded-circle float-right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Explore container end-->
+
+    <!---Trending On Medium div start-->    
+    <div style="border-bottom: 1px solid darkgray;">
+        <!---Trending On Medium container start-->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 mb-2">
+
+                    <!--font-size ile vakit kaybetmemek için h6 tagı kullanıldı, small ile de boyut ve margin ayarlaması yapıldı-->
+                    <h6>
+                        <!----->
+                        <i class="fa-solid fa-arrow-trend-up"> 
+                            <small class="ml-2">TRENDING ON MEDIUM</small>
+                        </i>
+                    </h6>
+                </div>
+
+                <!---div veya article tag'ı kullanmak farketmez. Önemli olan bir yapı oluşturmaktır. 
+                    "yapı" adında bile bir yapı oluşturabilirsin. Handikapı, projeni inceleyen birisi, anlamakta zorlanabilir-->
+                <article class="col-sm-4 mb-2">
+                    <div class="row">
+                        <div class="col-1">
+                            <h6 class="text-black-50">01</h6>
+                        </div>
+                        <div class="col-11">
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-4 mb-2">
+                    <div class="row">
+                        <div class="col-1">
+                            <h6 class="text-black-50">02</h6>
+                        </div>
+                        <div class="col-11">
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch <small>in</small> Inside the White Sox </span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-4 mb-2">
+                    <div class="row">
+                        <div class="col-1">
+                            <h6 class="text-black-50">03</h6>
+                        </div>
+                        <div class="col-11">
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>            
+                <article class="col-sm-4 mb-2">
+                    <div class="row">
+                        <div class="col-1">
+                            <h6 class="text-black-50">04</h6>
+                        </div>
+                        <div class="col-11">
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>            
+                <article class="col-sm-4 mb-2">
+                    <div class="row">
+                        <div class="col-1">
+                            <h6 class="text-black-50">05</h6>
+                        </div>
+                        <div class="col-11">
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>            
+                <article class="col-sm-4 mb-2">
+                    <div class="row">
+                        <div class="col-1">
+                            <h6 class="text-black-50">06</h6>
+                        </div>
+                        <div class="col-11">
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!---Trending On Medium container end-->
+    </div>
+    <!---Trending On Medium div end-->   
+
+    <!---Alt Yapı container start-->
+    <div class="container">
+        <div class="row mt-5">
+
+    <!---Alt Yapı Sol colon start-->             
+            <section class="col-sm-8">
+
+    <!---Alt Yapı Sol row start-->                
+                <div class="row">
+                    <div class="col-sm-8">
+                        <article>
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, omnis? Minus dolorum dolores vel nihil!</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+
+                                <!--img etiketinde olduğu gibi list etiketinde de bookmark işareti sağa yaslandı -->
+                                <li class="list-inline-item float-right"><i class="fa-solid fa-bookmark"></i></li>
+                              </ul>
+                        </article>                     
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://picsum.photos/400/250" alt="" class="w-100">
+                    </div>
+                    <div class="col-sm-8">
+                        <article>
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, omnis? Minus dolorum dolores vel nihil!</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+                                <li class="list-inline-item float-right"><i class="fa-solid fa-bookmark"></i></li>
+                              </ul>
+                        </article>               
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://picsum.photos/400/250" alt="" class="w-100">
+                    </div>
+                    <div class="col-sm-8">
+                        <article>
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, omnis? Minus dolorum dolores vel nihil!</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+                                <li class="list-inline-item float-right"><i class="fa-solid fa-bookmark"></i></li>
+                              </ul>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://picsum.photos/400/250" alt="" class="w-100">
+                    </div>
+                    <div class="col-sm-8">
+                        <article>
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, omnis? Minus dolorum dolores vel nihil!</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+
+                                <!--img etiketinde olduğu gibi list etiketinde de bookmark işareti sağa yaslandı -->
+                                <li class="list-inline-item float-right"><i class="fa-solid fa-bookmark"></i></li>
+                              </ul>
+                        </article>                     
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://picsum.photos/400/250" alt="" class="w-100">
+                    </div>
+                    <div class="col-sm-8">
+                        <article>
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, omnis? Minus dolorum dolores vel nihil!</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+
+                                <!--img etiketinde olduğu gibi list etiketinde de bookmark işareti sağa yaslandı -->
+                                <li class="list-inline-item float-right"><i class="fa-solid fa-bookmark"></i></li>
+                              </ul>
+                        </article>                     
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://picsum.photos/400/250" alt="" class="w-100">
+                    </div>
+                    <div class="col-sm-8">
+                        <article>
+                            <img class="rounded-circle" src="https://picsum.photos/id/12/25/25" alt="">
+                            <span class="small ml-1">Will Leitch</span>
+                            <h6 class="mt-2">
+                                <strong>Lorem ipsum dolor sit.</strong>
+                            </h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, omnis? Minus dolorum dolores vel nihil!</p>
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">Dec</li>
+                                <li class="list-inline-item">6 min read</li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-star ml-2"></i> 
+                                </li>
+
+                                <!--img etiketinde olduğu gibi list etiketinde de bookmark işareti sağa yaslandı -->
+                                <li class="list-inline-item float-right"><i class="fa-solid fa-bookmark"></i></li>
+                              </ul>
+                        </article>                     
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://picsum.photos/400/250" alt="" class="w-100">
+                    </div>
+                </div>
+    <!---Alt Yapı Sol row end-->     
+            </section>
+    <!---Alt Yapı Sol colon end--> 
+
+    <!---Alt Yapı Sağ colon start-->    
+            <aside class="col-sm-4">
+                <h6>
+                    <small>
+                        <strong>
+                            DISCOVER MORE OF WHAT MATTERS TO YOU
+                        </strong>
+                    </small>
+                </h6>
+
+                <!--"aside-buttons" adında bir class oluşturuldu ve bu class'a medium.css'de margin bottom: 10px; tanımlandı.
+                    Bu sayede her bir liste etiketine tek tek mb 10px tanımlamak yerine, tek bir işlem ile istenen özellik verildi---->
+                <ul class="list-inline aside-buttons">
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Lorem</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">İpsum</a>
+                    </li>                    
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Dolor</a>
+                    </li>                    
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Link</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Lorem</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">İpsum</a>
+                    </li>                    
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Dolor</a>
+                    </li>                    
+                    <li class="list-inline-item">
+                        <a href="#" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Link</a>
+                    </li>
+                  </ul>
+
+            </aside>
+    <!---Alt Yapı Sağ colon end-->    
+
+        </div>
+    <!---Alt Yapı container end-->
+    </div>
+    <script src="js/jquery-3.5.1.slim.min.js"></script> 
+    <!--olması gereken js dosyaları bootstrap den incelendi ve bu jquery dosyası web den indirildi. bu bağlantı da bootsrap quick start'da yazıyor olması nedeniyle yapıldı-->
+    
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <!--önce bootstrap dosyları download edildi ve klasör içine js ve css klasörü olarak aktarıldı. 
+        bu bağlantı da bootsrap quick start'da yazıyor olması nedeniyle yapıldı--->
+</body>
+</html>
